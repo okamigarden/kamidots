@@ -1,0 +1,52 @@
+2024-12-18 01:06:34.898 [info] Started local extension host with pid 139512.
+2024-12-18 01:06:35.657 [info] Settings Sync: Updating due to initialize
+2024-12-18 01:06:35.658 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:06:35.658 [info] Settings Sync: Authentication providers updated []
+2024-12-18 01:06:35.659 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:06:35.659 [info] Settings Sync: Authentication providers updated ["github"]
+2024-12-18 01:06:35.659 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:06:35.659 [info] Settings Sync: Authentication providers updated ["github"]
+2024-12-18 01:06:35.659 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:06:35.659 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-18 01:06:35.659 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:06:35.659 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-18 01:06:35.672 [info] Settings Sync: Updating due to declared authentication providers changed
+2024-12-18 01:06:35.672 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:06:35.673 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-18 01:06:35.673 [info] Settings Sync: Updating due to declared authentication providers changed
+2024-12-18 01:06:35.673 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:06:35.673 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-18 01:06:36.201 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:06:36.201 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-18 01:06:37.570 [info] [perf] Render performance baseline is 17ms
+2024-12-18 01:06:38.020 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2024-12-18 01:06:51.723 [error] Unable to read file '/home/fabian/Documents/Paul Dirac/quantum-mechanics.html' (Error: File not modified since): Error: Unable to read file '/home/fabian/Documents/Paul Dirac/quantum-mechanics.html' (Error: File not modified since)
+    at Pnt.F (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:3088:69590)
+    at Pnt.D (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:3088:69499)
+    at async Gnt.M (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:3089:9119)
+    at async Gnt.readStream (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:3089:8894)
+    at async Pde.Db (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1275:11960)
+    at async Pde.resolve (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1275:10435)
+    at async vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:3089:5479
+2024-12-18 01:07:04.117 [info] Started local extension host with pid 139799.
+2024-12-18 01:07:04.566 [info] Settings Sync: Updating due to initialize
+2024-12-18 01:07:04.566 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:07:04.566 [info] Settings Sync: Authentication providers updated []
+2024-12-18 01:07:04.697 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:07:04.697 [info] Settings Sync: Authentication providers updated ["github"]
+2024-12-18 01:07:04.697 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:07:04.697 [info] Settings Sync: Authentication providers updated ["github"]
+2024-12-18 01:07:04.698 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:07:04.698 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-18 01:07:04.698 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:07:04.698 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-18 01:07:04.698 [info] Settings Sync: Updating due to declared authentication providers changed
+2024-12-18 01:07:04.698 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:07:04.698 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-18 01:07:04.698 [info] Settings Sync: Updating due to declared authentication providers changed
+2024-12-18 01:07:04.698 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:07:04.699 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-18 01:07:05.066 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 01:07:05.066 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-18 01:07:06.743 [info] [perf] Render performance baseline is 16ms
+2024-12-18 01:07:07.177 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.

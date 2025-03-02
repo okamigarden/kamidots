@@ -1,0 +1,100 @@
+* {
+  color: #eceff4;
+  /* border: 0; */
+  /* border-radius: 5; */
+  /* padding: 1 0; */
+  font-family: Hack;
+  font-size: 14px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-bottom: 0px;
+  padding-top: 2px;
+}
+
+window#waybar {
+  background: rgba(1, 22, 40, 0);
+  padding-top: 0px;
+}
+
+.modules-left {
+  background: rgba(30, 30, 46, 1.0);
+  border-radius: 90px;
+  border-bottom: 3px;
+  color: #eceff4;
+  border-color: #f5c2e7;
+  border-style: solid;
+  margin-top: 2px;
+}
+
+/* .modules-right { */
+/*   background: rgba(1, 22, 40, 0.6); */
+/*   border-radius: 90px; */
+/*   border-bottom: 3px; */
+/*   color: #eceff4; */
+/*   border-color: #7aa2f7; */
+/*   border-style: solid; */
+/*   margin-top: 2px; */
+/* } */
+
+#workspaces {
+  background: rgba(30, 30, 46, 1.0);
+  border-radius: 90px;
+  border-bottom: 3px;
+  color: #eceff4;
+  border-color: #f5c2e7;
+  border-style: solid;
+  margin-top: 0px;
+}
+
+#workspaces button {
+  padding: 0px 2px;
+  border-top: 2px;
+  color: #eceff4;
+  border-color: transparent;
+  border-style: solid;
+  margin-top: 0px;
+}
+
+#workspaces button.active {
+  border-color: #f5c2e7;
+  border-radius: 90;
+  padding: 0px 0px;
+}
+
+#mode {
+  color: #f5c2e7;
+}
+
+#clock {
+  background: rgba(30, 30, 46, 1.0);
+  border-radius: 90px;
+  border-bottom: 3px;
+  color: #eceff4;
+  border-color: #f5c2e7;
+  border-style: solid;
+  margin-top: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#pulseaudio {
+  background: rgba(30, 30, 46, 1.0);
+  border-radius: 90px;
+  border-bottom: 3px;
+  color: #eceff4;
+  border-color: #f5c2e7;
+  border-style: solid;
+  margin-top: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#mpd {
+  background: rgba(30, 30, 46, 1.0);
+  border-radius: 90px;
+  border-bottom: 3px;
+  color: #eceff4;
+  border-color: #f5c2e7;
+  border-style: solid;
+  margin-top: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+}

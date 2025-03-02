@@ -1,0 +1,24 @@
+2024-12-18 00:44:24.908 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2024-12-18 00:44:24.954 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2024-12-18 00:44:24.959 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2024-12-18 00:44:24.964 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2024-12-18 00:44:25.057 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2024-12-18 00:44:25.098 [info] Deleted uninstalled extension from disk eamodio.gitlens /home/fabian/.vscode/extensions/eamodio.gitlens-16.0.4
+2024-12-18 00:44:25.180 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/fabian/.vscode/extensions/eamodio.gitlens-16.0.4.532fb325.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/fabian/.vscode/extensions/eamodio.gitlens-16.0.4.532fb325.vsctmp'
+    at hm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39254)
+    at Es (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39361)
+    at Fr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:22677)
+    at Fr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:16010)
+    at async Zl.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:84491)
+    at async Jl.yb (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:66605)
+2024-12-18 00:44:25.259 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2024-12-18 00:44:25.311 [info] Deleted uninstalled extension from disk ms-python.debugpy /home/fabian/.vscode/extensions/ms-python.debugpy-2024.12.0-linux-x64
+2024-12-18 00:44:25.311 [info] Deleted uninstalled extension from disk ms-python.vscode-pylance /home/fabian/.vscode/extensions/ms-python.vscode-pylance-2024.11.3
+2024-12-18 00:44:25.312 [info] Deleted uninstalled extension from disk ms-python.python /home/fabian/.vscode/extensions/ms-python.python-2024.20.0-linux-x64
+2024-12-18 00:44:25.338 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2024-12-18 00:44:25.390 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2024-12-18 00:44:25.455 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2024-12-18 00:44:25.513 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2024-12-18 00:44:27.146 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2024-12-18 00:44:27.194 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2024-12-18 00:44:27.825 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.

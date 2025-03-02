@@ -1,0 +1,12 @@
+[KDE]
+ShowDeleteCommand=false
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0
+
+[Colors:View]
+BackgroundNormal=30,30,30  # Dark background
+ForegroundNormal=255,255,255  # White text
+
+
