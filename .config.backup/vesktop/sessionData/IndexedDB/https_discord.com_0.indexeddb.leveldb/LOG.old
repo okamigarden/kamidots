@@ -1,0 +1,9 @@
+2025/03/01-15:58:42.733 438 Reusing MANIFEST /home/fabian/.config/vesktop/sessionData/IndexedDB/https_discord.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/01-15:58:42.733 438 Recovering log #121
+2025/03/01-15:58:42.740 438 Reusing old log /home/fabian/.config/vesktop/sessionData/IndexedDB/https_discord.com_0.indexeddb.leveldb/000121.log 
+2025/03/01-16:40:16.914 4cc Compacting 1@1 + 1@2 files
+2025/03/01-16:40:16.919 4cc Generated table #125@1: 36 keys, 137993 bytes
+2025/03/01-16:40:16.919 4cc Compacted 1@1 + 1@2 files => 137993 bytes
+2025/03/01-16:40:16.923 4cc compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/03/01-16:40:16.923 4cc Delete type=2 #123
+2025/03/01-16:40:16.923 4cc Delete type=2 #94

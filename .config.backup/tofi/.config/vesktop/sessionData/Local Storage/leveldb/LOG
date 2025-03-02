@@ -1,0 +1,15 @@
+2025/02/22-13:07:51.879 5c5 Reusing MANIFEST /home/fabian/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
+2025/02/22-13:07:51.883 5c5 Recovering log #2264
+2025/02/22-13:07:51.884 5c5 Reusing old log /home/fabian/.config/vesktop/sessionData/Local Storage/leveldb/002264.log 
+2025/02/22-13:08:52.146 5c6 Level-0 table #2268: started
+2025/02/22-13:08:52.163 5c6 Level-0 table #2268: 97612 bytes OK
+2025/02/22-13:08:52.169 5c6 Delete type=0 #2264
+2025/02/22-13:08:52.170 5c6 Compacting 4@0 + 1@1 files
+2025/02/22-13:08:52.174 5c6 Generated table #2269@0: 127 keys, 122764 bytes
+2025/02/22-13:08:52.174 5c6 Compacted 4@0 + 1@1 files => 122764 bytes
+2025/02/22-13:08:52.180 5c6 compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/02/22-13:08:52.180 5c6 Delete type=2 #2258
+2025/02/22-13:08:52.180 5c6 Delete type=2 #2260
+2025/02/22-13:08:52.180 5c6 Delete type=2 #2262
+2025/02/22-13:08:52.180 5c6 Delete type=2 #2265
+2025/02/22-13:08:52.180 5c6 Delete type=2 #2268

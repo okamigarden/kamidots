@@ -1,0 +1,22 @@
+2024-12-18 00:44:24.582 [info] Started local extension host with pid 133615.
+2024-12-18 00:44:24.775 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2024-12-18 00:44:25.262 [info] Settings Sync: Updating due to initialize
+2024-12-18 00:44:25.262 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 00:44:25.262 [info] Settings Sync: Authentication providers updated []
+2024-12-18 00:44:25.276 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 00:44:25.276 [info] Settings Sync: Authentication providers updated ["github"]
+2024-12-18 00:44:25.276 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 00:44:25.277 [info] Settings Sync: Authentication providers updated ["github"]
+2024-12-18 00:44:25.277 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 00:44:25.277 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-18 00:44:25.277 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 00:44:25.277 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-18 00:44:25.286 [info] Settings Sync: Updating due to declared authentication providers changed
+2024-12-18 00:44:25.286 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 00:44:25.286 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-18 00:44:25.286 [info] Settings Sync: Updating due to declared authentication providers changed
+2024-12-18 00:44:25.286 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 00:44:25.286 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-18 00:44:25.924 [info] Settings Sync: Updating authentication providers. Authentication Providers from store: [{"id":"github","scopes":["user:email"]},{"id":"microsoft","scopes":["openid","profile","email","offline_access"]}]
+2024-12-18 00:44:25.924 [info] Settings Sync: Authentication providers updated ["github","microsoft"]
+2024-12-18 00:44:27.275 [info] [perf] Render performance baseline is 16ms

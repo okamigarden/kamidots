@@ -1,0 +1,4 @@
+set $lang us
+set $term foot
+set $launcher nwg-drawer
+set $exit $launcher

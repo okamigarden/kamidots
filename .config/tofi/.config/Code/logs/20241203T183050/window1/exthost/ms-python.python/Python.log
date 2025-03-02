@@ -1,0 +1,9 @@
+2024-12-03 18:30:51.458 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2024-12-03 18:30:51.458 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2024-12-03 18:30:51.458 [info] Experiment 'pythonTestAdapter' is active
+2024-12-03 18:30:51.458 [info] Native locator: Refresh started
+2024-12-03 18:30:51.458 [error] Python discovery not supported in untrusted workspace
+2024-12-03 18:30:51.458 [info] Native locator: Refresh finished in 7 ms
+2024-12-03 18:30:51.459 [error] Python discovery not supported in untrusted workspace
+2024-12-03 18:30:51.459 [error] Invalid environment [native]: {}
+2024-12-03 18:30:52.525 [info] Starting Pylance language server.

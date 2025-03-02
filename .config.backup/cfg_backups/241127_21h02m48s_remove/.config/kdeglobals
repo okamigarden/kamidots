@@ -1,0 +1,8 @@
+[General]
+TerminalApplication=kitty
+
+[Icons]
+Theme=Tela-circle-dracula
+
+[Colors:View]
+BackgroundNormal=#212121

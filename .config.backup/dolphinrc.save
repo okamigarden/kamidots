@@ -1,0 +1,19 @@
+[General]
+RememberOpenedTabs=false
+Version=202
+ViewPropsTimestamp=2025,2,22,15,0,40.937
+
+[IconsMode]
+PreviewSize=32
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=ebookthumbnail,cursorthumbnail,svgthumbnail,djvuthumbnail,fontthumbnail,kraorathumbnail,windowsimagethumbnail,exrthumbnail,jpegthumbnail,appimagethumbnail,comicbookthumbnail,directorythumbnail,opendocumentthumbnail,imagethumbnail,windowsexethumbnail,audiothumbnail,ffmpegthumbnailer,gdk-pixbuf-thumbnailer,gsf-office,jxl
+
+[

@@ -1,0 +1,9 @@
+2024-12-03 18:56:13.066 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2024-12-03 18:56:13.066 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2024-12-03 18:56:13.066 [info] Experiment 'pythonTestAdapter' is active
+2024-12-03 18:56:13.066 [info] Native locator: Refresh started
+2024-12-03 18:56:13.077 [info] > conda info --json
+2024-12-03 18:56:13.868 [info] Native locator: Refresh finished in 1407 ms
+2024-12-03 18:56:13.870 [info] Python interpreter path: /usr/bin/python
+2024-12-03 18:56:14.731 [info] Starting Pylance language server.
+2024-12-03 18:56:24.203 [info] CreateEnv Trigger - Workspace not found for Untitled-1

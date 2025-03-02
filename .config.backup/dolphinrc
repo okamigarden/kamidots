@@ -1,0 +1,29 @@
+MenuBar=Disabled
+
+[CompactMode]
+PreviewSize=32
+
+[General]
+GlobalViewProps=false
+Version=202
+ViewPropsTimestamp=2025,2,22,15,0,40.937
+
+[Icons]
+Theme=Papirus-Dark
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[MainWindow][Toolbar mainToolBar]
+IconSize=16
+ToolButtonStyle=IconOnly
+
+[PreviewSettings]
+Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,gdk-pixbuf-thumbnailer,gsf-office
+
+[UiSettings]
+ColorScheme=Breeze-dark

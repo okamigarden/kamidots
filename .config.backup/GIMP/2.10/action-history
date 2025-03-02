@@ -1,0 +1,9 @@
+# GIMP action-history
+
+(history-item "file-open" 0)
+(history-item "plug-in-smooth-palette" 0)
+(history-item "plug-in-ccanalyze" 0)
+(history-item "dialogs-histogram" 0)
+(history-item "plug-in-borderaverage" 1)
+
+# end of action-history

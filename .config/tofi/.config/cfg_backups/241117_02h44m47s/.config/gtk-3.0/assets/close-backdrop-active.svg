@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 50 50"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" baseProfile="tiny">
+<title>Qt SVG Document</title>
+<desc>Generated with Qt</desc>
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="#302225" fill-opacity="1" stroke="none" transform="matrix(1.72414,0,0,2.94118,98.2759,-2642.7)"
+font-family="Cousine Nerd Font" font-size="10" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-57,901.52 C-57,899.863 -55.6568,898.52 -54,898.52 L-31,898.52 C-29.3431,898.52 -28,899.863 -28,901.52 L-28,912.52 C-28,914.177 -29.3431,915.52 -31,915.52 L-54,915.52 C-55.6568,915.52 -57,914.177 -57,912.52 L-57,901.52"/>
+</g>
+
+<g fill="#5e4047" fill-opacity="1" stroke="none" transform="matrix(1.72414,0,0,2.94118,98.2759,-2642.7)"
+font-family="Cousine Nerd Font" font-size="10" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-56,901.52 C-56,900.415 -55.1046,899.52 -54,899.52 L-31,899.52 C-29.8954,899.52 -29,900.415 -29,901.52 L-29,912.52 C-29,913.624 -29.8954,914.52 -31,914.52 L-54,914.52 C-55.1046,914.52 -56,913.624 -56,912.52 L-56,901.52"/>
+</g>
+
+<g fill="#d9d9db" fill-opacity="1" stroke="none" transform="matrix(1.72414,0,0,2.94118,124.077,-57.5655)"
+font-family="Cousine Nerd Font" font-size="10" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="nonzero" d="M-61.9648,24.5723 L-61.9648,25.5723 L-60.9648,25.5723 L-60.9648,26.5723 L-59.9648,26.5723 L-59.9648,27.5723 L-58.9648,27.5723 L-58.9648,28.5723 L-59.9648,28.5723 L-59.9648,29.5723 L-60.9648,29.5723 L-60.9648,30.5723 L-61.9648,30.5723 L-61.9648,31.5723 L-58.9648,31.5723 L-58.9648,30.5723 L-57.9648,30.5723 L-57.9648,29.5723 L-56.9648,29.5723 L-56.9648,30.5723 L-55.9648,30.5723 L-55.9648,31.5723 L-52.9648,31.5723 L-52.9648,30.5723 L-53.9648,30.5723 L-53.9648,29.5723 L-54.9648,29.5723 L-54.9648,28.5723 L-55.9648,28.5723 L-55.9648,27.5723 L-54.9648,27.5723 L-54.9648,26.5723 L-53.9648,26.5723 L-53.9648,25.5723 L-52.9648,25.5723 L-52.9648,24.5723 L-55.9648,24.5723 L-55.9648,25.5723 L-56.9648,25.5723 L-56.9648,26.5723 L-57.9648,26.5723 L-57.9648,25.5723 L-58.9648,25.5723 L-58.9648,24.5723 L-61.9648,24.5723"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Cousine Nerd Font" font-size="10" font-weight="400" font-style="normal" 
+>
+</g>
+</g>
+</svg>

@@ -1,0 +1,191 @@
+- name: "Audio"
+  packages:
+    - strawberry
+    - lollypop
+    - audacious
+    - elisa
+    - kwave
+    - audacity
+    - ardour
+    - lmms
+    - mixxx
+    - musescore
+    - rosegarden
+    - bitwig-studio
+
+- name: "Browsers"
+  packages:
+    - cachy-browser
+    - librewolf-bin
+    - firefox
+    - firefox-esr-bin
+    - chromium
+    - ungoogled-chromium
+    - vivaldi vivaldi-ffmpeg-codecs
+    - torbrowser-launcher
+    - brave-bin
+    - falkon
+    - qutebrowser python-adblock
+
+- name: "Communication"
+  packages:
+    - telegram-desktop
+    - discord
+    - neochat
+    - fractal
+    - element-desktop
+    - wire-desktop
+    - signal-desktop
+    - zoom
+    - teams
+    - slack-desktop
+    - mumble
+
+- name: "Development"
+  packages:
+    - vim
+    - code
+    - atom
+    - emacs
+    - qtcreator
+    - gnome-builder
+    - kdevelop
+    - netbeans
+    - intellij-idea-community-edition
+    - pycharm-community-edition
+    - gitkraken
+    - cockpit cockpit-machines
+    - ansible
+    - docker docker-compose
+    - podman-docker podman-compose crun
+    - salt
+    - jenkins
+    - puppet
+    - prometheus
+    - vagrant
+    - terraform
+
+- name: "Games"
+  packages:
+    - aisleriot
+    - mari0
+    - kapman
+    - knights
+    - kmahjongg
+    - supertuxkart
+    - supertux
+    - extremetuxracer
+    - minetest minetest-server
+    - 0ad
+    - teeworlds
+    - xonotic
+    - hedgewars
+
+- name: "Graphics"
+  packages:
+    - krita krita-plugin-gmic opencolorio
+    - gimp
+    - inkscape
+    - blender
+    - digikam
+    - darktable
+    - luminancehdr
+    - kolourpaint
+    - mypaint
+    - wings3d
+    - sweethome3d
+    - freecad
+    - librecad
+    - kicad
+    - pencil2d
+    - synfigstudio
+    - opentoonz
+    - fontforge
+    - birdfont
+
+- name: "Internet"
+  packages:
+    - xdman
+    - freedownloadmanager
+    - deluge-gtk
+    - qbittorrent
+    - nextcloud-client
+    - remmina
+    - filezilla
+    - putty
+    - warpinator
+    - nitroshare
+    - jdownloader2
+
+- name: "Mail"
+  packages:
+    - thunderbird
+    - kmail
+    - evolution
+    - geary
+    - mailspring
+    - claws-mail
+    - sylpheed
+
+- name: "Multimedia"
+  packages:
+    - hypnotix
+    - shortwave
+    - converseen
+    - handbrake
+    - mystiq
+    - transmageddon
+    - soundconverter
+    - stremio
+    - kodi kodi-platform kodi-eventclients
+    - mediaelch
+    - subtitlecomposer
+    - kid3
+    - easytag
+    - k3b cdparanoia cdrdao dvd+rw-tools emovix transcode vcdimager cdrtools
+    - brasero
+    - xfburn
+
+- name: "Office"
+  packages:
+    - libreoffice-fresh libmythes
+    - libreoffice-still libmythes
+    - joplin
+    - onlyoffice-bin
+    - wps-office wps-office-mime ttf-wps-fonts
+    - freeoffice
+    - yozo-office yozo-office-fonts
+    - calligra
+    - skrooge
+    - kmymoney
+    - abiword
+    - gnumeric
+    - gnucash
+    - homebank
+
+- name: "Other"
+  packages:
+    - scrcpy
+    - droidcam
+    - soundwire
+    - variety
+
+- name: "Video"
+  packages:
+    - kdenlive movit sox opus-tools frei0r-plugins opentimelineio dvgrab opencv
+    - dragon
+    - shotcut
+    - pitivi frei0r-plugins
+    - openshot
+    - obs-studio
+    - vlc
+    - smplayer smplayer-skins smplayer-themes
+    - baka-mplayer
+
+- name: "Virtualization"
+  packages:
+    - virtualbox
+    - gnome-boxes
+    - virt-manager
+    - genymotion
+

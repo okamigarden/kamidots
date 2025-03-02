@@ -1,0 +1,11 @@
+[Applications][firefox]
+Seen=true
+
+[Applications][org.qbittorrent.qBittorrent]
+Seen=true
+
+[Applications][vesktop]
+Seen=true
+
+[Notifications]
+PopupPosition=BottomRight

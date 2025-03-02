@@ -1,0 +1,44 @@
+2025-01-31 18:56:02.990 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:03.027 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:03.030 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:03.116 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:03.163 [info] Deleted uninstalled extension from disk kevinrose.vsc-python-indent /home/fabian/.vscode/extensions/kevinrose.vsc-python-indent-1.18.0
+2025-01-31 18:56:03.167 [info] Deleted uninstalled extension from disk eamodio.gitlens /home/fabian/.vscode/extensions/eamodio.gitlens-16.0.5
+2025-01-31 18:56:03.177 [info] Deleted uninstalled extension from disk streetsidesoftware.code-spell-checker /home/fabian/.vscode/extensions/streetsidesoftware.code-spell-checker-4.0.21
+2025-01-31 18:56:03.255 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:03.270 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/fabian/.vscode/extensions/streetsidesoftware.code-spell-checker-4.0.21.-67add03a.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/fabian/.vscode/extensions/streetsidesoftware.code-spell-checker-4.0.21.-67add03a.vsctmp'
+    at hm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39254)
+    at Es (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39361)
+    at Fr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:22677)
+    at Fr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:16010)
+    at async Zl.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:84491)
+    at async Jl.yb (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:66605)
+2025-01-31 18:56:03.272 [info] Deleted uninstalled extension from disk ms-python.python /home/fabian/.vscode/extensions/ms-python.python-2024.22.0-linux-x64
+2025-01-31 18:56:03.335 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:03.368 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:03.479 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:03.590 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:03.649 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:03.734 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:03.956 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:05.230 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:05.314 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:05.925 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:08.492 [info] Getting Manifest... eamodio.gitlens
+2025-01-31 18:56:08.619 [info] Installing extension: eamodio.gitlens {"productVersion":{"version":"1.95.3","date":"2024-11-13T14:50:04.152Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/fabian/.vscode/extensions/extensions.json","path":"/home/fabian/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true}
+2025-01-31 18:56:08.631 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:08.652 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:08.667 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:09.644 [info] Extension signature verification result for eamodio.gitlens: UnknownError. Executed: true. Duration: 22ms.
+2025-01-31 18:56:09.808 [info] Extracted extension to file:///home/fabian/.vscode/extensions/eamodio.gitlens-16.2.1: eamodio.gitlens
+2025-01-31 18:56:09.822 [info] Renamed to /home/fabian/.vscode/extensions/eamodio.gitlens-16.2.1
+2025-01-31 18:56:09.843 [info] Marked extension as uninstalled eamodio.gitlens-16.1.1
+2025-01-31 18:56:09.850 [error] [/home/fabian/.vscode/extensions/ms-toolsai.jupyter-2024.11.0-linux-x64]: Extension is not compatible with Code 1.95.3. Extension requires: ^1.96.0.
+2025-01-31 18:56:09.858 [info] Extension installed successfully: eamodio.gitlens vscode-userdata:/home/fabian/.vscode/extensions/extensions.json
+2025-01-31 18:56:09.905 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/fabian/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/fabian/.vscode/extensions/extensions.json.vsctmp'
+    at hm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39254)
+    at Es (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39361)
+    at Fr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:22677)
+    at Fr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:16010)
+    at async Zl.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:84491)
+    at async Jl.yb (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:66605)
