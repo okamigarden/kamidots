@@ -3,7 +3,7 @@ These dotfiles are my personal work/entertainment/daily operating setup.
 
 ## Overview
 
-This project is an ongoing development of my .config files, designed to be optimized for performance, gaming, usability, and aesthetics.
+This project is an ongoing development of my .config files, designed to be optimised for performance, gaming, usability, and aesthetics.
 
 # 🚀 Installation Script
 
@@ -16,14 +16,16 @@ A script is available to automate the installation process. This script ensures 
 Look below for a manual installation guide!
 
 > [!WARNING]  
-> Any personal modifications may be overwritten. Backups of previous configurations will be available in ~/.config/config_backups.
+> Any personal modifications may be overwritten!
 
 # 🔧 Manual Installation
 
 If you prefer a manual setup, you can copy the required configuration files into your .config directory.
 
 # Placeholder for manual installation steps
-rsync -av ~/kamidots ~/.config
+> [!WARNING]
+> Any personal modiciations may be overwritten!
+rsync -avf ~/kamidots/.config ~/.config
 
 Refer to the manual installation guide for specific application configurations.
 
@@ -44,12 +46,6 @@ To keep your configurations updated with the latest changes, run the following:
 cd ~/kamidots
 git pull origin master
 
-# 📚 Additional Resources
-
-# 🛠️ Troubleshooting & FAQ
-
-# 🎨 Theme Gallery
-
 # 💡 Contributing
 
 If you have improvements or suggestions, feel free to contribute!
@@ -63,6 +59,8 @@ Commit Your Changes (git commit -m "Description of changes")
 Push to GitHub (git push origin feature-name)
 
 Submit a Pull Request 🎉
+
+
 
 ⚖️ License
 
