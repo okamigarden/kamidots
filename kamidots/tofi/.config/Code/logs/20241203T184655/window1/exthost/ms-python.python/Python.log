@@ -1,9 +1,0 @@
-2024-12-03 18:46:57.328 [info] Experiment 'pythonRecommendTensorboardExt' is active
-2024-12-03 18:46:57.328 [info] Experiment 'pythonTerminalEnvVarActivation' is active
-2024-12-03 18:46:57.328 [info] Experiment 'pythonTestAdapter' is active
-2024-12-03 18:46:57.328 [info] Native locator: Refresh started
-2024-12-03 18:46:57.338 [info] > conda info --json
-2024-12-03 18:46:58.064 [info] Native locator: Refresh finished in 1324 ms
-2024-12-03 18:46:58.066 [info] Python interpreter path: /usr/bin/python
-2024-12-03 18:46:58.933 [info] Starting Pylance language server.
-2024-12-03 18:46:59.826 [info] CreateEnv Trigger - Workspace not found for /home/fabian/Downloads/calculator.py
