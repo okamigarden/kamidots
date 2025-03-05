@@ -1,8 +1,0 @@
-2024-12-17 23:46:10.628 [info] Experiment 'pythonRecommendTensorboardExt' is active
-2024-12-17 23:46:10.628 [info] Experiment 'pythonTerminalEnvVarActivation' is active
-2024-12-17 23:46:10.628 [info] Experiment 'pythonTestAdapter' is active
-2024-12-17 23:46:10.628 [info] Native locator: Refresh started
-2024-12-17 23:46:10.641 [info] > conda info --json
-2024-12-17 23:46:11.332 [info] Native locator: Refresh finished in 1316 ms
-2024-12-17 23:46:11.333 [info] Python interpreter path: /usr/bin/python
-2024-12-17 23:46:12.180 [info] Starting Pylance language server.

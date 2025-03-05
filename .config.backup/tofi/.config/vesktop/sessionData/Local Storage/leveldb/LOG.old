@@ -1,6 +1,0 @@
-2025/02/22-12:33:16.292 5d0 Reusing MANIFEST /home/fabian/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
-2025/02/22-12:33:16.296 5d0 Recovering log #2261
-2025/02/22-12:33:16.296 5d0 Reusing old log /home/fabian/.config/vesktop/sessionData/Local Storage/leveldb/002261.log 
-2025/02/22-12:34:16.646 5d1 Level-0 table #2265: started
-2025/02/22-12:34:16.650 5d1 Level-0 table #2265: 94469 bytes OK
-2025/02/22-12:34:16.656 5d1 Delete type=0 #2261
