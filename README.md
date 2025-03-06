@@ -67,8 +67,13 @@ git push origin feature-name
 ```
 5. Submit a pull request 🎉
 
-   
-
+# Troubleshooting
+Broken 'Open with' in Dolphin after attempting to choose a specific application to open the file extension with.
+## Current Fix
+Run in bash not Fish/zsh/etc.
+```
+XDG_MENU_PREFIX=arch- kbuildsycoca6 
+```
 ## ⚖️ License
 
 This project is licensed under the MIT License. See LICENSE for more details.
