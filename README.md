@@ -8,11 +8,11 @@ This project is an ongoing development of my .config files, designed to be optim
 
 ## 🚀 Installation Script
 
-A script is available to automate the installation process. It ensures that all the necessary dependencies are installed and it applies all configurations seamlessly.
+A script WILL be available to automate the installation process. It ensures that all the necessary dependencies are installed and it applies all configurations seamlessly.
 
 Installation Command
 ```
-./install.sh
+WIP - Coming soon :)
 ```
 ⚠️ WARNING: Any personal modifications may be overwritten!
 
@@ -36,7 +36,7 @@ Customization is key! A variety of themes and colour schemes are available to ma
 
 Apply a Theme
 ```
-./theme_manager.sh apply theme-name
+WIP - Coming soon :)
 ```
 Check out the themes documentation for more options.
 
