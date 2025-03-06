@@ -1,66 +1,69 @@
-# Kamidots Configuration かみ
-These dotfiles are my personal work/entertainment/daily operating setup. 
+Kamidots Configuration かみ
 
-## Overview
+These dotfiles represent my personal work, entertainment, and daily operating setup.
+
+📌 Overview
 
 This project is an ongoing development of my .config files, designed to be optimised for performance, gaming, usability, and aesthetics.
 
-# 🚀 Installation Script
+🚀 Installation Script
 
-A script is available to automate the installation process. This script ensures all necessary dependencies are installed and applies the configurations seamlessly.
+A script is available to automate the installation process. It ensures that all the necessary dependencies are installed and it applies all configurations seamlessly.
 
-## Placeholder command for installation script
-```
+Installation Command
+
 ./install.sh
-```
-Look below for a manual installation guide!
 
-> [!WARNING]  
-> Any personal modifications may be overwritten!
+⚠️ WARNING: Any personal modifications may be overwritten!
 
-# 🔧 Manual Installation
+🔧 Manual Installation
 
 If you prefer a manual setup, you can copy the required configuration files into your .config directory.
 
-# Placeholder for manual installation steps
-> [!WARNING]
-> Any personal modiciations may be overwritten!
+Manual Installation Command
+
 rsync -avf ~/kamidots/.config ~/.config
 
 Refer to the manual installation guide for specific application configurations.
+
+⚠️ WARNING: Any personal modifications may be overwritten!
 
 🎨 Themes & Colour Schemes
 
 Customization is key! A variety of themes and colour schemes are available to match your aesthetic preferences. You can switch between themes using the theme manager.
 
-# Placeholder for theme application command
+Apply a Theme
+
 ./theme_manager.sh apply theme-name
 
 Check out the themes documentation for more options.
 
-🔄 Updating the Configurations
+🔄 Updating Configurations
 
-To keep your configurations updated with the latest changes, run the following:
+To keep your configurations updated with the latest changes, run:
 
-# Placeholder for updating configurations
 cd ~/kamidots
 git pull origin master
 
-# 💡 Contributing
+💡 Contributing
 
-If you have improvements or suggestions, feel free to contribute!
+Have suggestions or improvements? Feel free to contribute!
 
-Fork the Repository
+Fork the repository
 
-Create a Feature Branch (git checkout -b feature-name)
+Create a feature branch
 
-Commit Your Changes (git commit -m "Description of changes")
+git checkout -b feature-name
 
-Push to GitHub (git push origin feature-name)
+Commit your changes
 
-Submit a Pull Request 🎉
+git commit -m "Description of changes"
 
+Push to GitHub
 
+git push origin feature-name
+
+Submit a pull request 🎉
 
 ⚖️ License
 
