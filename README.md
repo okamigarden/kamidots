@@ -23,7 +23,7 @@ If you prefer a manual setup, you can copy the required configuration files into
 
 Manual Installation Command
 ```
-rsync -avf ~/kamidots/.config ~/.config
+WIP - Coming soon :)
 ```
 Refer to the manual installation guide for specific application configurations.
 
