@@ -21,7 +21,7 @@ echo "Installing official packages..."
 pacman -S --needed --noconfirm \
     kitty dolphin firefox polkit-kde-agent polkit-gnome wl-clipboard dbus udiskie \
     swaylock grim slurp brightnessctl pipewire playerctl kvantum \
-    nm-applet powerline-fonts fish kservice5 kservice6 
+    powerline-fonts fish kservice5 kservice6 
     
 # Which AUR helper to use: paru or yay
 if command -v paru &> /dev/null; then
@@ -39,22 +39,22 @@ else
         cd yay
         makepkg -si --no-confirm
         AUR_HELPER="yay"
-
-    if [[ "$CONFIRM" == "p"]]; then
+    elif [[ "$CONFIRM" == "p"]]; then
         sudo pacman -S --needed base-devel
         git clone https://aur.archlinux.org/paru.git
         cd paru || exit
         makepkg -si
         AUR_HELPER="paru"
+    fi
     else
-    echo "Retry..."
-    exit 0
+    	echo "Retry..."
+    	exit 0
 fi
 
 echo "Using $AUR_HELPER to install AUR packages..."
 $AUR_HELPER -S --needed --noconfirm \
     hypridle cliphist swww vesktop-bin xdg-desktop-portal-hyprland \
-    swappy wlogout
+    swappy wlogout nm-applet
 echo "All dependencies installed successfully!"
 
 # Rsync command
