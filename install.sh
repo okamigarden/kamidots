@@ -21,7 +21,7 @@ echo "Installing official packages..."
 pacman -S --needed --noconfirm \
     kitty dolphin firefox polkit-kde-agent polkit-gnome wl-clipboard dbus udiskie \
     swaylock grim slurp brightnessctl pipewire playerctl kvantum \
-    nm-applet powerline-fonts fish
+    nm-applet powerline-fonts fish kservice5 kservice6 
     
 # Which AUR helper to use: paru or yay
 if command -v paru &> /dev/null; then
