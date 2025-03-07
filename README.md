@@ -8,11 +8,11 @@ This project is an ongoing development of my .config files, designed to be optim
 
 ## 🚀 Installation Script
 
-A script is available to automate the installation process. It ensures that all the necessary dependencies are installed and it applies all configurations seamlessly.
+A script WILL be available to automate the installation process. It ensures that all the necessary dependencies are installed and it applies all configurations seamlessly.
 
 Installation Command
 ```
-./install.sh
+WIP - Coming soon :)
 ```
 ⚠️ WARNING: Any personal modifications may be overwritten!
 
@@ -23,7 +23,7 @@ If you prefer a manual setup, you can copy the required configuration files into
 
 Manual Installation Command
 ```
-rsync -avf ~/kamidots/.config ~/.config
+WIP - Coming soon :)
 ```
 Refer to the manual installation guide for specific application configurations.
 
@@ -36,7 +36,7 @@ Customization is key! A variety of themes and colour schemes are available to ma
 
 Apply a Theme
 ```
-./theme_manager.sh apply theme-name
+WIP - Coming soon :)
 ```
 Check out the themes documentation for more options.
 
@@ -67,8 +67,13 @@ git push origin feature-name
 ```
 5. Submit a pull request 🎉
 
-   
-
+# Troubleshooting
+Broken 'Open with' in Dolphin after attempting to choose a specific application to open the file extension with.
+## Current Fix
+Run in bash not Fish/zsh/etc.
+```
+XDG_MENU_PREFIX=arch- kbuildsycoca6 
+```
 ## ⚖️ License
 
 This project is licensed under the MIT License. See LICENSE for more details.
