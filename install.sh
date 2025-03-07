@@ -9,21 +9,19 @@ if [[ $EUID -ne 0 ]]; then
     exit 1
 fi
 
-
-#Variable locations
+# Variable locations
 TARGET_DIR="$HOME/.config"
 
-
 echo "Updating system..."
-pacman -Syu --no-confirm
+pacman -Syu --noconfirm
 
 echo "Installing official packages..."
 pacman -S --needed --noconfirm \
     kitty dolphin firefox polkit-kde-agent polkit-gnome wl-clipboard dbus udiskie \
     swaylock grim slurp brightnessctl pipewire playerctl kvantum \
-    powerline-fonts fish kservice5 kservice6 
-    
-# Which AUR helper to use: paru or yay
+    nm-applet powerline-fonts fish kservice5 kservice6 
+
+# Determine which AUR helper to use: paru or yay
 if command -v paru &> /dev/null; then
     AUR_HELPER="paru"
 elif command -v yay &> /dev/null; then
@@ -32,39 +30,42 @@ else
     echo "Neither paru nor yay found."
     pacman -S --needed --noconfirm git base-devel
     read -rp "Do you want to install yay or paru? [(Y)ay/(P)aru] " CONFIRM
-    if [[ "$CONFIRM" == "y"]]; then
+    if [[ "$CONFIRM" == "y" ]]; then
         echo "Installing yay..."
-        sudo pacman -S --needed git base-devel
         git clone https://aur.archlinux.org/yay.git
-        cd yay
-        makepkg -si --no-confirm
+        cd yay || exit
+        makepkg -si --noconfirm
+        cd ..
+        rm -rf yay
         AUR_HELPER="yay"
-    elif [[ "$CONFIRM" == "p"]]; then
-        sudo pacman -S --needed base-devel
+    elif [[ "$CONFIRM" == "p" ]]; then
+        echo "Installing paru..."
         git clone https://aur.archlinux.org/paru.git
         cd paru || exit
-        makepkg -si
+        makepkg -si --noconfirm
+        cd ..
+        rm -rf paru
         AUR_HELPER="paru"
-    
     else
-    	echo "Retry..."
-    	exit 0
+        echo "Invalid choice. Exiting..."
+        exit 1
     fi
 fi
 
 echo "Using $AUR_HELPER to install AUR packages..."
 $AUR_HELPER -S --needed --noconfirm \
     hypridle cliphist swww vesktop-bin xdg-desktop-portal-hyprland \
-    swappy wlogout nm-applet
+    swappy wlogout
+
 echo "All dependencies installed successfully!"
 
-# Rsync command
+# Ensure rsync is installed
 if ! command -v rsync &> /dev/null; then
     echo "Installing rsync..."
-    pacman -S --needed --no-confirm rsync
+    pacman -S --needed --noconfirm rsync
 fi
 
-#Prompt before overwriting .config files.
+# Prompt before overwriting .config files.
 if [[ -d "$TARGET_DIR" ]]; then
     echo "Warning: The directory $TARGET_DIR already exists."
     read -rp "Do you want to overwrite the existing files? (y/N): " CONFIRM
@@ -74,37 +75,29 @@ if [[ -d "$TARGET_DIR" ]]; then
     fi
 fi
 
-#New Aliases in fish
-echo "Creating new aliases for fish..."
-alias -s hyprsettings='nano ~/.config/hypr/hyprland.conf'
-alias -s weather='curl wttr.in'
-alias -s wasd='systemctl poweroff'
-alias -s hyprquit='hyprctl dispatch exit'
-alias -s p='sudo pacman'
-
-
-
+# Copy configuration files using rsync
 echo "Copying configuration files to $TARGET_DIR..."
 mkdir -p "$TARGET_DIR"
 rsync -avP "$(pwd)/" "$TARGET_DIR/"
 
-echo "All dependencies installed and files copied successfully!"
-echo "
-                                                   
-    ▄█   ▄█▄    ▄████████   ▄▄▄▄███▄▄▄▄    ▄█      
-   ███ ▄███▀   ███    ███ ▄██▀▀▀███▀▀▀██▄ ███      
-   ███▐██▀     ███    ███ ███   ███   ███ ███▌     
-  ▄█████▀      ███    ███ ███   ███   ███ ███▌     
- ▀▀█████▄    ▀███████████ ███   ███   ███ ███▌     
-   ███▐██▄     ███    ███ ███   ███   ███ ███      
-   ███ ▀███▄   ███    ███ ███   ███   ███ ███      
-   ███   ▀█▀   ███    █▀   ▀█   ███   █▀  █▀       
-   ▀                                               
- ████████▄   ▄██████▄      ███        ▄████████    
- ███   ▀███ ███    ███ ▀█████████▄   ███    ███    
- ███    ███ ███    ███    ▀███▀▀██   ███    █▀     
- ███    ███ ███    ███     ███   ▀   ███           
- ███    ███ ███    ███     ███     ▀███████████    
- ███    ███ ███    ███     ███              ███    
- ███   ▄███ ███    ███     ███        ▄█    ███    
- ████████▀   ▀██████▀     ▄████▀    ▄████████▀"
+# Add aliases to Fish shell configuration
+echo "Adding new aliases for Fish shell..."
+FISH_CONFIG="$HOME/.config/fish/config.fish"
+
+# Ensure the config file exists
+mkdir -p "$HOME/.config/fish"
+touch "$FISH_CONFIG"
+
+{
+    echo "alias hyprsettings='nano ~/.config/hypr/hyprland.conf'"
+    echo "alias weather='curl wttr.in'"
+    echo "alias wasd='systemctl poweroff'"
+    echo "alias hyprquit='hyprctl dispatch exit'"
+    echo "alias p='sudo pacman'"
+} >> "$FISH_CONFIG"
+
+echo "Aliases added successfully to $FISH_CONFIG"
+
+echo "All dependencies installed, configurations copied, and aliases set!"
+echo "Setup complete!"
+
