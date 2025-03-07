@@ -23,20 +23,32 @@ pacman -S --needed --noconfirm \
     swaylock grim slurp brightnessctl pipewire playerctl kvantum \
     nm-applet powerline-fonts fish
     
-
-# Determine which AUR helper to use: paru or yay
+# Which AUR helper to use: paru or yay
 if command -v paru &> /dev/null; then
     AUR_HELPER="paru"
 elif command -v yay &> /dev/null; then
     AUR_HELPER="yay"
 else
-    echo "Neither paru nor yay found. Installing paru..."
+    echo "Neither paru nor yay found."
     pacman -S --needed --noconfirm git base-devel
-    git clone https://aur.archlinux.org/paru.git /tmp/paru
-    cd /tmp/paru || exit
-    makepkg -si --noconfirm
-    cd - || exit
-    AUR_HELPER="paru"
+    read -rp "Do you want to install yay or paru? [(Y)ay/(P)aru] " CONFIRM
+    if [[ "$CONFIRM" == "y"]]; then
+        echo "Installing yay..."
+        sudo pacman -S --needed git base-devel
+        git clone https://aur.archlinux.org/yay.git
+        cd yay
+        makepkg -si --no-confirm
+        AUR_HELPER="yay"
+
+    if [[ "$CONFIRM" == "p"]]; then
+        sudo pacman -S --needed base-devel
+        git clone https://aur.archlinux.org/paru.git
+        cd paru || exit
+        makepkg -si
+        AUR_HELPER="paru"
+    else
+    echo "Retry..."
+    exit 0
 fi
 
 echo "Using $AUR_HELPER to install AUR packages..."
@@ -47,7 +59,7 @@ echo "All dependencies installed successfully!"
 
 # Rsync command
 if ! command -v rsync &> /dev/null; then
-    echo "Installing sync..."
+    echo "Installing rsync..."
     pacman -S --needed --no-confirm rsync
 fi
 
