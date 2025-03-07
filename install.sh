@@ -45,10 +45,11 @@ else
         cd paru || exit
         makepkg -si
         AUR_HELPER="paru"
-    fi
+    
     else
     	echo "Retry..."
     	exit 0
+    fi
 fi
 
 echo "Using $AUR_HELPER to install AUR packages..."
