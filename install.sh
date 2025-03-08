@@ -54,9 +54,17 @@ else
 fi
 
 echo "Using $AUR_HELPER to install AUR packages..."
-$AUR_HELPER -S --needed --noconfirm \
-    hypridle cliphist swww vesktop-bin xdg-desktop-portal-hyprland \
-    swappy wlogout
+# Run paru/yay as the normal user (not root)
+if [[ -n "$SUDO_USER" ]]; then
+    sudo -u "$SUDO_USER" $AUR_HELPER -S --needed --noconfirm \
+        hypridle cliphist swww vesktop-bin xdg-desktop-portal-hyprland \
+        swappy wlogout
+else
+    $AUR_HELPER -S --needed --noconfirm \
+        hypridle cliphist swww vesktop-bin xdg-desktop-portal-hyprland \
+        swappy wlogout
+fi
+
 
 echo "All dependencies installed successfully!"
 
