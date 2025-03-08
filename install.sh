@@ -9,8 +9,9 @@ if [[ $EUID -ne 0 ]]; then
     exit 1
 fi
 
-# Variable locations
-TARGET_DIR="$HOME/.config"
+# Get the real home directory of the user running the script
+USER_HOME=$(eval echo ~${SUDO_USER:-$USER})
+TARGET_DIR="$USER_HOME/.config"
 
 echo "Updating system..."
 pacman -Syu --noconfirm
@@ -19,7 +20,7 @@ echo "Installing official packages..."
 pacman -S --needed --noconfirm \
     kitty dolphin firefox polkit-kde-agent polkit-gnome wl-clipboard dbus udiskie \
     swaylock grim slurp brightnessctl pipewire playerctl kvantum \
-    nm-applet powerline-fonts fish kservice5 kservice6 
+    nm-applet powerline-fonts fish kservice5 kservice6
 
 # Determine which AUR helper to use: paru or yay
 if command -v paru &> /dev/null; then
@@ -82,10 +83,10 @@ rsync -avP "$(pwd)/" "$TARGET_DIR/"
 
 # Add aliases to Fish shell configuration
 echo "Adding new aliases for Fish shell..."
-FISH_CONFIG="$HOME/.config/fish/config.fish"
+FISH_CONFIG="$USER_HOME/.config/fish/config.fish"
 
 # Ensure the config file exists
-mkdir -p "$HOME/.config/fish"
+mkdir -p "$USER_HOME/.config/fish"
 touch "$FISH_CONFIG"
 
 {
@@ -100,4 +101,3 @@ echo "Aliases added successfully to $FISH_CONFIG"
 
 echo "All dependencies installed, configurations copied, and aliases set!"
 echo "Setup complete!"
-
