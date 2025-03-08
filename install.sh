@@ -87,7 +87,8 @@ fi
 # Copy configuration files using rsync
 echo "Copying configuration files to $TARGET_DIR..."
 mkdir -p "$TARGET_DIR"
-rsync -avP --chown=$USER:$USER "$(pwd)/.config/" "$TARGET_DIR/"
+rsync -avP --chown=$SUDO_USER:$SUDO_USER "$(pwd)/.config/" "$TARGET_DIR/"
+sudo chown -R $USER:$USER ~/.config
 
 
 # Add aliases to Fish shell configuration
