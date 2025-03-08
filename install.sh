@@ -12,6 +12,7 @@ fi
 # Get the real home directory of the user running the script
 USER_HOME=$(eval echo ~${SUDO_USER:-$USER})
 TARGET_DIR="$USER_HOME/.config"
+ICONS_DIR="/usr/share/icons"
 
 echo "Updating system..."
 pacman -Syu --noconfirm
@@ -27,30 +28,6 @@ if command -v paru &> /dev/null; then
     AUR_HELPER="paru"
 elif command -v yay &> /dev/null; then
     AUR_HELPER="yay"
-else
-    echo "Neither paru nor yay found."
-    pacman -S --needed --noconfirm git base-devel
-    read -rp "Do you want to install yay or paru? [(Y)ay/(P)aru] " CONFIRM
-    if [[ "$CONFIRM" == "y" ]]; then
-        echo "Installing yay..."
-        git clone https://aur.archlinux.org/yay.git
-        cd yay || exit
-        makepkg -si --noconfirm
-        cd ..
-        rm -rf yay
-        AUR_HELPER="yay"
-    elif [[ "$CONFIRM" == "p" ]]; then
-        echo "Installing paru..."
-        git clone https://aur.archlinux.org/paru.git
-        cd paru || exit
-        makepkg -si --noconfirm
-        cd ..
-        rm -rf paru
-        AUR_HELPER="paru"
-    else
-        echo "Invalid choice. Exiting..."
-        exit 1
-    fi
 fi
 
 echo "Using $AUR_HELPER to install AUR packages..."
@@ -88,6 +65,7 @@ fi
 echo "Copying configuration files to $TARGET_DIR..."
 mkdir -p "$TARGET_DIR"
 rsync -avP --chown=$SUDO_USER:$SUDO_USER "$(pwd)/.config/" "$TARGET_DIR/"
+rsync -avP "$(pwd)/usr/share/icons" "$ICONS_DIR"
 sudo chown -R $USER:$USER ~/.config
 
 
