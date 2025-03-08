@@ -13,7 +13,7 @@ fi
 USER_HOME=$(eval echo ~${SUDO_USER:-$USER})
 TARGET_DIR="$USER_HOME/.config"
 ICONS_DIR="/usr/share/icons"
-WALL_DIR="/$(pwd)
+WALL_DIR="/$(pwd)/Wallpapers"
 
 echo "Updating system..."
 pacman -Syu --noconfirm
@@ -55,7 +55,7 @@ fi
 # Prompt before overwriting .config files.
 if [[ -d "$TARGET_DIR" ]]; then
     echo "Warning: The directory $TARGET_DIR already exists."
-    read -rp "Do you want to overwrite the existing files? (y/N): " CONFIRM
+    read -r -p "Do you want to overwrite the existing files? (y/N): " CONFIRM
     if [[ "$CONFIRM" != "y" && "$CONFIRM" != "Y" ]]; then
         echo "Aborting file copy. Existing files were not changed."
         exit 0
@@ -66,7 +66,7 @@ fi
 echo "Copying configuration files to $TARGET_DIR..."
 mkdir -p "$TARGET_DIR"
 rsync -avP --chown=$SUDO_USER:$SUDO_USER "$(pwd)/.config/" "$TARGET_DIR/"
-rsync -avP "$(pwd)/usr/share/icons" "$ICONS_DIR"
+rsync -avP --chown=$SUDO_USER:$SUDO_USER "$(pwd)/usr/share/icons" "$ICONS_DIR"
 sudo chown -R $USER:$USER ~/.config
 
 
@@ -91,7 +91,7 @@ echo "Aliases added successfully to $FISH_CONFIG"
 
 # Set wallpaper for user
 echo "Setting wallpaper!"
-swww img $(pwd)/Wallpapers/wallhaven-48kgk4.png
+swww img $WALL_DIR/wallhaven-48kgk4.png
 
 echo "All dependencies installed, configurations copied, and aliases set!"
 echo "# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
