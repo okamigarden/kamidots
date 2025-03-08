@@ -79,7 +79,8 @@ fi
 # Copy configuration files using rsync
 echo "Copying configuration files to $TARGET_DIR..."
 mkdir -p "$TARGET_DIR"
-rsync -avP "$(pwd)/.config/*" "$TARGET_DIR/"
+rsync -avP --chown=$USER:$USER "$(pwd)/.config/" "$TARGET_DIR/"
+
 
 # Add aliases to Fish shell configuration
 echo "Adding new aliases for Fish shell..."
