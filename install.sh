@@ -13,6 +13,7 @@ fi
 USER_HOME=$(eval echo ~${SUDO_USER:-$USER})
 TARGET_DIR="$USER_HOME/.config"
 ICONS_DIR="/usr/share/icons"
+WALL_DIR="/$(pwd)
 
 echo "Updating system..."
 pacman -Syu --noconfirm
@@ -86,6 +87,11 @@ touch "$FISH_CONFIG"
 } >> "$FISH_CONFIG"
 
 echo "Aliases added successfully to $FISH_CONFIG"
+
+
+# Set wallpaper for user
+echo "Setting wallpaper!"
+swww img $(pwd)/Wallpapers/wallhaven-48kgk4.png
 
 echo "All dependencies installed, configurations copied, and aliases set!"
 echo "# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
