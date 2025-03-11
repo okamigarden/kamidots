@@ -12,7 +12,7 @@ A script WILL be available to automate the installation process. It ensures that
 
 Installation Command
 ```
-WIP - Coming soon :)
+sudo ./install.sh
 ```
 ⚠️ WARNING: Any personal modifications may be overwritten!
 
