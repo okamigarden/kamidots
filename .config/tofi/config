@@ -1,16 +1,16 @@
-prompt-text = "> "
+prompt-text = "󰘍 "
 
 text-color = #508991
-prompt-color = #09bc8a
+prompt-color = #75dddd
 selection-color = #09bc8a
-background-color = #101d28dd
+background-color = #172a3add
 
 width = 100%
 padding-left = 35%
 padding-top = 30%
 height = 100%
 border-width = 10
-border-color = #09bc8a
+border-color = #75dddd
 outline-width = 0
 result-spacing = 14
 num-results = 8
