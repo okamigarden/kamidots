@@ -14,7 +14,8 @@ Installation Command
 ```
 sudo ./install.sh
 ```
-⚠️ WARNING: Any personal modifications may be overwritten!
+> [!WARNING]
+> ⚠️ WARNING: Any personal modifications may be overwritten!
 
 
 ## 🔧 Manual Installation
