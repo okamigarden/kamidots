@@ -14,7 +14,7 @@ Installation Command
 ```
 sudo ./install.sh
 ```
-> [!WARNING]
+> [!CAUTION]
 > ⚠️ WARNING: Any personal modifications may be overwritten!
 
 
@@ -28,7 +28,7 @@ WIP - Coming soon :)
 ```
 Refer to the manual installation guide for specific application configurations.
 
-> [!WARNING]
+> [!CAUTION]
 > ⚠️ WARNING: Any personal modifications may be overwritten!
 
 ## 🎨 Themes & Colour Schemes
