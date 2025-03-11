@@ -8,7 +8,7 @@ This project is an ongoing development of my .config files, designed to be optim
 
 ## 🚀 Installation Script
 
-A script WILL be available to automate the installation process. It ensures that all the necessary dependencies are installed and it applies all configurations seamlessly.
+An experimental script is available to automate the installation process. It ensures that all the necessary dependencies are installed and it applies all configurations seamlessly.
 
 Installation Command
 ```
@@ -27,8 +27,8 @@ WIP - Coming soon :)
 ```
 Refer to the manual installation guide for specific application configurations.
 
-⚠️ WARNING: Any personal modifications may be overwritten!
-
+> [!WARNING]
+> ⚠️ WARNING: Any personal modifications may be overwritten!
 
 ## 🎨 Themes & Colour Schemes
 
