@@ -8,13 +8,7 @@ This project is an ongoing development of my .config files, designed to be optim
 
 ## 🚀 Installation Script
 
-A script WILL be available to automate the installation process. It ensures that all the necessary dependencies are installed and it applies all configurations seamlessly.
-
-Installation Command
-```
-sudo ./install.sh
-```
-An experimental script is available to automate the installation process. It ensures that all the necessary dependencies are installed and it applies all configurations seamlessly.
+An experimental script is available to automate the installation process. It ensures that all the necessary dependencies are installed and it applies all configurations.
 
 Installation Command
 ```
