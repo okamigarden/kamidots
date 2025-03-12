@@ -8,13 +8,22 @@ This project is an ongoing development of my .config files, designed to be optim
 
 ## 🚀 Installation Script
 
+<<<<<<< HEAD
 A script WILL be available to automate the installation process. It ensures that all the necessary dependencies are installed and it applies all configurations seamlessly.
 
 Installation Command
 ```
 WIP - Coming soon :)
+=======
+An experimental script is available to automate the installation process. It ensures that all the necessary dependencies are installed and it applies all configurations seamlessly.
+
+Installation Command
 ```
-⚠️ WARNING: Any personal modifications may be overwritten!
+sudo ./install.sh
+>>>>>>> a0699835c5ba65755048af90fc64c1fe47045a53
+```
+> [!CAUTION]
+> ⚠️ WARNING: Any personal modifications will be overwritten! Create a backup!
 
 
 ## 🔧 Manual Installation
@@ -27,8 +36,8 @@ WIP - Coming soon :)
 ```
 Refer to the manual installation guide for specific application configurations.
 
-⚠️ WARNING: Any personal modifications may be overwritten!
-
+> [!CAUTION]
+> ⚠️ WARNING: Any personal modifications will be overwritten! Create a backup!
 
 ## 🎨 Themes & Colour Schemes
 
