@@ -1,0 +1,136 @@
+/* Global Styles */
+* {
+    font-family: NotoMono;
+    font-size: 12px;
+    font-weight: 900;
+    margin: 0.1em 0.2em;
+    padding: 0;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    border: none;
+    border-radius: 3px;
+    min-height: 0;
+}
+
+/* The whole bar */
+#waybar {
+background-color: transparent;
+color: #75DDDD;
+transition-property: background-color;
+transition-duration: 0.5s;
+border-radius: 14px;
+margin: 2px 2px 2px 2px;
+padding: 0;
+border: none;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* Workspaces */
+#workspaces button {
+padding: 2px 6px;
+margin: 2px 3px;
+border-radius: 10px;
+color: #09BC8A;
+background-color: rgba(0, 67, 70, 0.8);
+transition: all 0.3s ease-in-out;
+font-size: 12px;
+}
+
+#workspaces button.active {
+background: #508991;
+}
+
+#workspaces button:hover {
+background: #333333;
+}
+
+#workspaces button.urgent {
+background-color: #75DDDD;
+}
+
+#workspaces {
+background-color: transparent;
+border-radius: 14px;
+padding: 2px 4px;
+}
+
+/* Modules */
+#clock, #cpu, #temperature, #memory, #network, #custom-weather, #battery, #custom-menu, #custom-power {
+background-color: rgba(23, 42, 58, 0.8);
+padding: 2px 4px;
+border-radius: 14px;
+margin: 2px 3px;
+}
+
+#clock {
+color: #09BC8A;
+}
+
+#cpu {
+color: #09BC8A;
+}
+
+#wireplumber {
+padding: 2px 4px;
+border-radius: 14px;
+margin: 2px 3px;
+background-color: rgba(23, 42, 58, 0.8);
+color: #09BC8A;
+}
+
+#temperature {
+color: #09BC8A;
+}
+
+#memory {
+color: #09BC8A;
+}
+
+#network {
+background-color: rgba(23, 42, 58, 0.8);
+color: #09BC8A;
+}
+
+
+#custom-weather {
+background-color: rgba(23, 42, 58, 0.8);
+color: #09BC8A;
+}
+
+#battery {
+color: #09BC8A;
+}
+
+#battery.charging,
+#battery.full,
+#battery.plugged {
+color: #26a65b;
+}
+
+#battery.critical:not(.charging) {
+color: #f53c3c;
+animation: blink 0.5s linear infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: rgba(30, 34, 42, 0.5);
+        color: #abb2bf;
+    }
+}
+
+#pulseaudio {
+color: #09BC8A;
+}
+
+#custom-menu {
+color: #75DDDD;
+}
+
+#custom-power {
+color: #09BC8A;
+}
+
