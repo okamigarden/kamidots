@@ -13,7 +13,7 @@ fi
 USER_HOME=$(eval echo ~${SUDO_USER:-$USER})
 TARGET_DIR="$USER_HOME/.config"
 ICONS_DIR="/usr/share/icons"
-WALL_DIR="/$(pwd)/Wallpapers"
+WALL_DIR="$(pwd)/Wallpapers"
 
 echo "Updating system..."
 pacman -Syu --noconfirm
@@ -21,25 +21,24 @@ pacman -Syu --noconfirm
 echo "Installing official packages..."
 pacman -S --needed --noconfirm \
     kitty dolphin firefox polkit-kde-agent polkit-gnome wl-clipboard dbus udiskie \
-    swaylock grim slurp brightnessctl pipewire playerctl kvantum \
-    powerline-fonts fish paru yay
+    grim slurp brightnessctl pipewire playerctl kvantum powerline-fonts fish paru \
+    yay
 
 # Determine which AUR helper to use: paru or yay
 if command -v paru &> /dev/null; then
     AUR_HELPER="paru"
 elif command -v yay &> /dev/null; then
     AUR_HELPER="yay"
+else
+    echo "Error: No AUR helper found! Install paru or yay first."
+    exit 1
 fi
 
 echo "Using $AUR_HELPER to install AUR packages..."
 # Run paru/yay as the normal user (not root)
 if [[ -n "$SUDO_USER" ]]; then
     sudo -u "$SUDO_USER" $AUR_HELPER -S --needed --noconfirm \
-        hypridle cliphist swww vesktop-bin xdg-desktop-portal-hyprland \
-        swappy wlogout
-else
-    $AUR_HELPER -S --needed --noconfirm \
-        hypridle cliphist swww vesktop-bin xdg-desktop-portal-hyprland \
+        hypridle cliphist swww xdg-desktop-portal-hyprland \
         swappy wlogout
 fi
 
@@ -54,11 +53,12 @@ fi
 
 # Confirmation Message (DO YOU WANT TO PROCEED)
 BACKUP_DIR="$USER_HOME/.config_backup_$(date +%Y%m%d_%H%M%S)"
+mkdir -p "$BACKUP_DIR"
 
 if [[ -d "$TARGET_DIR" ]]; then
     echo "Backing up existing .config directory to $BACKUP_DIR..."
     mkdir -p "$BACKUP_DIR"
-    rsync -avP "$TARGET_DIR/"
+    rsync -rvP "$TARGET_DIR/" "$BACKUP_DIR"
 fi
 
 # Warn before overwriting .config files.
@@ -72,9 +72,9 @@ fi
 # Copying kamidots to .config
 echo "Copying kamidots files to $TARGET_DIR..."
 mkdir -p "$TARGET_DIR"
-rsync -avP --chown=$SUDO_USER:$SUDO_USER "$(pwd)/.config/" "$TARGET_DIR/"
-rsync -avP --chown=$SUDO_USER:$SUDO_USER "$(pwd)/usr/share/icons" "$ICONS_DIR"
-sudo chown -R $USER:$USER ~/.config
+rsync -rvP --delete --chown=$SUDO_USER:$SUDO_USER "$(pwd)/.config/" "$TARGET_DIR/"
+rsync -rvP --delete --chown=$SUDO_USER:$SUDO_USER "$(pwd)/usr/share/icons/" "$ICONS_DIR"
+sudo chown -R $SUDO_USER:$SUDO_USER "$USER_HOME/.config"
 
 
 # Add aliases to Fish shell configuration
@@ -85,19 +85,17 @@ FISH_CONFIG="$USER_HOME/.config/fish/config.fish"
 mkdir -p "$USER_HOME/.config/fish"
 touch "$FISH_CONFIG"
 
-{
-    echo "alias hyprsettings='nano ~/.config/hypr/hyprland.conf'"
-    echo "alias wasd='systemctl poweroff'"
-    echo "alias hyprquit='hyprctl dispatch exit'"
-    echo "alias p='sudo pacman'"
-} >> "$FISH_CONFIG"
-
+# Append aliases only if non-existing
+grep -qxF "alias hyprsettings='nano ~/.config/hypr/hyprland.conf'" "$FISH_CONFIG" || echo "alias hyprsettings='nano ~/.config/hypr/hyprland.conf'" >> "$FISH_CONFIG"
+grep -qxF "alias wasd='systemctl poweroff'" "$FISH_CONFIG" || echo "alias wasd='systemctl poweroff'" >> "$FISH_CONFIG"
+grep -qxF "alias hyprquit='hyprctl dispatch exit'" "$FISH_CONFIG" || echo "alias hyprquit='hyprctl dispatch exit'" >> "$FISH_CONFIG"
+grep -qxF "alias p='sudo pacman'" "$FISH_CONFIG" || echo "alias p='sudo pacman'" >> "$FISH_CONFIG"
 echo "Aliases added successfully to $FISH_CONFIG"
 
 
 # Set wallpaper for user
 echo "Setting wallpaper!"
-swww img $WALL_DIR/wallhaven-48kgk4.png
+sudo -u "$SUDO_USER" swww img "$WALL_DIR/wallhaven-48kgk4.png"
 
 echo "All dependencies installed, configurations copied, and aliases set!"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
