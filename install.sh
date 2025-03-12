@@ -52,18 +52,25 @@ if ! command -v rsync &> /dev/null; then
     pacman -S --needed --noconfirm rsync
 fi
 
-# Prompt before overwriting .config files.
+# Confirmation Message (DO YOU WANT TO PROCEED)
+BACKUP_DIR="$USER_HOME/.config_backup_$(date +%Y%m%d_%H%M%S)"
+
 if [[ -d "$TARGET_DIR" ]]; then
-    echo "Warning: The directory $TARGET_DIR already exists."
-    read -r -p "Do you want to overwrite the existing files? (y/N): " CONFIRM
-    if [[ "$CONFIRM" != "y" && "$CONFIRM" != "Y" ]]; then
-        echo "Aborting file copy. Existing files were not changed."
-        exit 0
-    fi
+    echo "Backing up existing .config directory to $BACKUP_DIR..."
+    mkdir -p "$BACKUP_DIR"
+    rsync -avP "$TARGET_DIR/"
 fi
 
-# Copy configuration files using rsync
-echo "Copying configuration files to $TARGET_DIR..."
+# Warn before overwriting .config files.
+echo "Warning: The directory $TARGET DIR already exists."
+read -r -p "Do you want to overwrite the existing files? (y/N): " CONFIRM
+if [[ "$CONFIRM" != "y" && "$CONFIRM" != "Y" ]]; then
+    echo "Aborting file copy. Existing files were not overwritten."
+    exit 0
+fi
+
+# Copying kamidots to .config
+echo "Copying kamidots files to $TARGET_DIR..."
 mkdir -p "$TARGET_DIR"
 rsync -avP --chown=$SUDO_USER:$SUDO_USER "$(pwd)/.config/" "$TARGET_DIR/"
 rsync -avP --chown=$SUDO_USER:$SUDO_USER "$(pwd)/usr/share/icons" "$ICONS_DIR"
@@ -80,7 +87,6 @@ touch "$FISH_CONFIG"
 
 {
     echo "alias hyprsettings='nano ~/.config/hypr/hyprland.conf'"
-    echo "alias weather='curl wttr.in'"
     echo "alias wasd='systemctl poweroff'"
     echo "alias hyprquit='hyprctl dispatch exit'"
     echo "alias p='sudo pacman'"
@@ -94,7 +100,7 @@ echo "Setting wallpaper!"
 swww img $WALL_DIR/wallhaven-48kgk4.png
 
 echo "All dependencies installed, configurations copied, and aliases set!"
-echo "# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                                  
    ▄█   ▄█▄    ▄████████   ▄▄▄▄███▄▄▄▄    ▄█         
   ███ ▄███▀   ███    ███ ▄██▀▀▀███▀▀▀██▄ ███         
@@ -112,7 +118,8 @@ echo "# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ███    ███ ███    ███     ███     ▀███████████       
 ███    ███ ███    ███     ███              ███       
 ███   ▄███ ███    ███     ███        ▄█    ███       
-████████▀   ▀██████▀     ▄████▀    ▄████████▀"        
+████████▀   ▀██████▀     ▄████▀    ▄████████▀
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"        
                                                  
 
 echo "Setup complete!"
