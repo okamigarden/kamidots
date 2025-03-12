@@ -8,7 +8,6 @@ This project is an ongoing development of my .config files, designed to be optim
 
 ## 🚀 Installation Script
 
-<<<<<<< HEAD
 A script WILL be available to automate the installation process. It ensures that all the necessary dependencies are installed and it applies all configurations seamlessly.
 
 Installation Command
@@ -20,8 +19,8 @@ An experimental script is available to automate the installation process. It ens
 Installation Command
 ```
 sudo ./install.sh
->>>>>>> a0699835c5ba65755048af90fc64c1fe47045a53
 ```
+
 > [!CAUTION]
 > ⚠️ WARNING: Any personal modifications will be overwritten! Create a backup!
 
@@ -78,11 +77,8 @@ git push origin feature-name
 
 # Troubleshooting
 Broken 'Open with' in Dolphin after attempting to choose a specific application to open the file extension with.
-## Current Fix
-Run in bash not Fish/zsh/etc.
-```
-XDG_MENU_PREFIX=arch- kbuildsycoca6 
-```
+Fixed by adding command to hyprland.conf
+
 ## ⚖️ License
 
 This project is licensed under the MIT License. See LICENSE for more details.
