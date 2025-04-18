@@ -61,14 +61,11 @@ Check out the themes documentation for more options.
 
 To keep your configurations updated with the latest changes, run:
 ```
-<<<<<<< HEAD
 1. cd ~/kamidots
-2. git pull origin master
-3. Complete manual installation.
-=======
-cd /home/$USER/kamidots
-git pull origin master
->>>>>>> 5c8361b6c2af18b79dd5bb0b49467bcd527ec783
+2. git fetch origin master
+3. git pull origin master
+4. Complete manual installation again.
+
 ```
 ## 💡 Contributing
 
