@@ -22,7 +22,7 @@ sudo ./install.sh
 > ⚠️ WARNING: Any personal modifications will be overwritten! Create aa backup.
 
 Manual Installation Command
-1. Copy configuration files over to system. ENSURE YOU BACKUP YOUR DATA!
+1. Copy configuration files over to system.
 ```
 ./backup.sh
 rsync -av --progress ~/kamidots/.config/ ~/.config/
