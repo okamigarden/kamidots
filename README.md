@@ -37,6 +37,11 @@ rsync -av ~/kamidots/Wallpapers/ ~/Pictures/Wallpapers
 swww-daemon
 swww img ~/Pictures/Wallpapers/wallhaven-48kgk4.png
 ```
+If you have a second monitor:
+```
+Example (Replace HDMI-A-1 with second monitor):
+swww img -o "HDMI-A-1" --transition-type random ~/Pictures/Wallpapers/wallhaven-48kgk4.png
+```
 
 3. Dolphin Setup
 ```
