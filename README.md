@@ -56,7 +56,7 @@ mv ~/kamidots/.local/share/dolphin ~/.local/share/dolphin
 
 4. Additional Information
 ```
-less READ_AFTER_INSTALLATION.txt
+less ~/kamidots/IMPORTANT.txt
 ```
 ## 🎨 Themes & Colour Schemes
 
