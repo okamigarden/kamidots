@@ -20,6 +20,10 @@ sudo ./install.sh
 ## 🔧 Manual Installation
 > [!CAUTION]
 > ⚠️ WARNING: Any personal modifications will be overwritten! Create aa backup.
+Dependencies
+```
+grep -vE '^\s*#|^\s*$' ~/kamidots/Dependencies.txt | xargs sudo pacman -S --needed --noconfirm
+```
 
 Manual Installation Command
 1. Copy configuration files over to system.
