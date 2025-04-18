@@ -96,8 +96,7 @@ git push origin feature-name
 5. Submit a pull request 🎉
 
 ## Known Issues // Troubleshooting
-Broken 'Open with' in Dolphin after attempting to choose a specific application to open the file extension with.
-Fixed by adding command to hyprland.conf
+Dolphin Theme broken at the moment :( We are working on a solution.
 
 ## ⚖️ License
 
