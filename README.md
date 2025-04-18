@@ -7,6 +7,8 @@ These dotfiles represent our collaborators personal work, entertainment, and dai
 This project is an ongoing development of our .config files, designed to be optimised for performance, gaming, usability, and aesthetics.
 
 ## 🚀 Installation Script (EXPERIMENTAL)
+> [!CAUTION]
+> ⚠️ WARNING: Any personal modifications will be overwritten! Create a backup!
 
 An experimental script is available to automate the installation process. It ensures that all the necessary dependencies are installed and it applies all configurations.
 
@@ -14,19 +16,15 @@ Installation Command
 ```
 sudo ./install.sh
 ```
-> [!CAUTION]
-> ⚠️ WARNING: Any personal modifications will be overwritten! Create a backup!
-
 
 ## 🔧 Manual Installation
-
-If you prefer a manual setup, you can copy the required configuration files into your .config directory.
 > [!CAUTION]
-> ⚠️ WARNING: Any personal modifications will be overwritten! Create a backup!
+> ⚠️ WARNING: Any personal modifications will be overwritten! Create aa backup.
 
 Manual Installation Command
 1. Copy configuration files over to system. ENSURE YOU BACKUP YOUR DATA!
 ```
+./backup.sh
 rsync -av --progress ~/kamidots/.config/ ~/.config/
 rsync -av --progress ~/kamidots/.local/ ~/.local/
 rsync -av --progress ~/kamidots/usr/ /usr/
@@ -39,17 +37,16 @@ rsync -av ~/kamidots/Wallpapers/ ~/Pictures/Wallpapers
 swww-daemon
 swww img ~/Pictures/Wallpapers/wallhaven-48kgk4.png
 ```
+
 3. Dolphin Setup
+```
 mkdir -p ~/.local/share/dolphin
 mv ~/kamidots/.local/share/dolphin ~/.local/share/dolphin
 ```
-Refer to the manual installation guide for specific application configurations.
-
-=======
-> [!CAUTION]
-> ⚠️ WARNING: Any personal modifications will be overwritten! Create a backup!
-
-
+4. Additional Information
+```
+less READ_AFTER_INSTALLATION.txt
+```
 ## 🎨 Themes & Colour Schemes
 
 Customization is key! A variety of themes and colour schemes are available to match your aesthetic preferences. You can switch between themes using the theme manager.

@@ -21,4 +21,8 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Thanks for installing my configuration :)
 
-To enable a dual monitor setup read line 426 in the hyprland config (~/.config/hypr/hyprland.conf)
+To enable a dual monitor setup read line 430 in the hyprland config (~/.config/hypr/hyprland.conf)
+
+Make sure to update the configuration using the update command:
+cd ~/kamidots
+git pull origin master
