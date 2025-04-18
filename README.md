@@ -4,7 +4,7 @@ These dotfiles represent our collaborators personal work, entertainment, and dai
 
 ## 📌 Overview
 
-This project is an ongoing development of our .config files, designed to be optimised for performance, gaming, usability, and aesthetics.
+This project is an ongoing development of our configuration files, designed to be optimised for performance, gaming, usability, and aesthetics.
 
 ## 🚀 Installation Script (EXPERIMENTAL)
 > [!CAUTION]
