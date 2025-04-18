@@ -19,8 +19,9 @@ sudo ./install.sh
 
 ## 🔧 Manual Installation
 > [!CAUTION]
-> ⚠️ WARNING: Any personal modifications will be overwritten! Create aa backup.
-Dependencies
+> ⚠️ WARNING: Any personal modifications will be overwritten! Create aas backup.
+
+0. Install the Dependencies
 ```
 grep -vE '^\s*#|^\s*$' ~/kamidots/Dependencies.txt | xargs sudo pacman -S --needed --noconfirm
 ```
