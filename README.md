@@ -1,6 +1,6 @@
 # Kamidots Configuration かみ
 
-These dotfiles represent our collaborators personal work, entertainment, and daily operating setup.
+These dotfiles represent our collaborators' personal work, entertainment, and daily operating setup.
 
 ## 📌 Overview
 
@@ -19,7 +19,7 @@ sudo ./install.sh
 
 ## 🔧 Manual Installation
 > [!CAUTION]
-> ⚠️ WARNING: Any personal modifications will be overwritten! Create aas backup.
+> ⚠️ WARNING: Any personal modifications will be overwritten!  Create a backup!
 
 0. Install the Dependencies
 ```
@@ -42,13 +42,13 @@ rsync -av ~/kamidots/Wallpapers/ ~/Pictures/Wallpapers
 swww-daemon
 swww img ~/Pictures/Wallpapers/wallhaven-48kgk4.png
 ```
-If you have a second monitor:
+2a. Second Monitor Setup (Optional)
 ```
 Example (Replace HDMI-A-1 with second monitor):
 swww img -o "HDMI-A-1" --transition-type random ~/Pictures/Wallpapers/wallhaven-48kgk4.png
 ```
 
-3. Dolphin Setup
+3. Dolphin Themeing Setup
 ```
 mkdir -p ~/.local/share/dolphin
 mv ~/kamidots/.local/share/dolphin ~/.local/share/dolphin
@@ -62,11 +62,10 @@ less READ_AFTER_INSTALLATION.txt
 
 Customization is key! A variety of themes and colour schemes are available to match your aesthetic preferences. You can switch between themes using the theme manager.
 
-Apply a Theme
+Apply a Theme:
 ```
 WIP - Coming soon :)
 ```
-Check out the themes documentation for more options.
 
 ## 🔄 Updating Configurations
 
@@ -76,7 +75,6 @@ To keep your configurations updated with the latest changes, run:
 2. git fetch origin master
 3. git pull origin master
 4. Complete manual installation again.
-
 ```
 ## 💡 Contributing
 
