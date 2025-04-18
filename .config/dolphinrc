@@ -7,9 +7,15 @@ PreviewSize=32
 GlobalViewProps=false
 Version=202
 ViewPropsTimestamp=2025,3,5,12,36,58.534
+=======
+ViewPropsTimestamp=2025,2,22,15,0,40.937
 
 [Icons]
 Theme=Papirus-Dark
+
+=======
+[IconsMode]
+PreviewSize=80
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false

@@ -1,10 +1,10 @@
 # Kamidots Configuration かみ
 
-These dotfiles represent my personal work, entertainment, and daily operating setup.
+These dotfiles represent our collaborators personal work, entertainment, and daily operating setup.
 
 ## 📌 Overview
 
-This project is an ongoing development of my .config files, designed to be optimised for performance, gaming, usability, and aesthetics.
+This project is an ongoing development of our .config files, designed to be optimised for performance, gaming, usability, and aesthetics.
 
 ## 🚀 Installation Script
 
@@ -14,7 +14,6 @@ Installation Command
 ```
 sudo ./install.sh
 ```
-
 > [!CAUTION]
 > ⚠️ WARNING: Any personal modifications will be overwritten! Create a backup!
 
@@ -42,7 +41,13 @@ swww img ~/Pictures/Wallpapers/wallhaven-48kgk4.png
 mkdir -p ~/.local/share/dolphin
 mv ~/kamidots/.local/share/dolphin ~/.local/share/dolphin
 ```
+<<<<<<< HEAD
 Refer to the manual installation guide for specific application configurations.
+
+=======
+> [!CAUTION]
+> ⚠️ WARNING: Any personal modifications will be overwritten! Create a backup!
+>>>>>>> 5c8361b6c2af18b79dd5bb0b49467bcd527ec783
 
 
 ## 🎨 Themes & Colour Schemes
@@ -59,16 +64,20 @@ Check out the themes documentation for more options.
 
 To keep your configurations updated with the latest changes, run:
 ```
+<<<<<<< HEAD
 1. cd ~/kamidots
 2. git pull origin master
 3. Complete manual installation.
+=======
+cd /home/$USER/kamidots
+git pull origin master
+>>>>>>> 5c8361b6c2af18b79dd5bb0b49467bcd527ec783
 ```
 ## 💡 Contributing
 
 Have suggestions or improvements? Feel free to contribute!
 
 1. Fork the repository
-
 2. Create a feature branch
 ```
 git checkout -b feature-name
@@ -83,7 +92,7 @@ git push origin feature-name
 ```
 5. Submit a pull request 🎉
 
-# Troubleshooting
+## Known Issues // Troubleshooting
 Broken 'Open with' in Dolphin after attempting to choose a specific application to open the file extension with.
 Fixed by adding command to hyprland.conf
 
