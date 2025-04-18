@@ -6,7 +6,7 @@ These dotfiles represent our collaborators personal work, entertainment, and dai
 
 This project is an ongoing development of our .config files, designed to be optimised for performance, gaming, usability, and aesthetics.
 
-## 🚀 Installation Script
+## 🚀 Installation Script (EXPERIMENTAL)
 
 An experimental script is available to automate the installation process. It ensures that all the necessary dependencies are installed and it applies all configurations.
 
@@ -22,7 +22,9 @@ sudo ./install.sh
 
 If you prefer a manual setup, you can copy the required configuration files into your .config directory.
 > [!CAUTION]
-> ⚠️ WARNING: Any personal modifications will be overwritten! Create a backup!Manual Installation Command
+> ⚠️ WARNING: Any personal modifications will be overwritten! Create a backup!
+
+Manual Installation Command
 1. Copy configuration files over to system. ENSURE YOU BACKUP YOUR DATA!
 ```
 rsync -av --progress ~/kamidots/.config/ ~/.config/
@@ -41,13 +43,11 @@ swww img ~/Pictures/Wallpapers/wallhaven-48kgk4.png
 mkdir -p ~/.local/share/dolphin
 mv ~/kamidots/.local/share/dolphin ~/.local/share/dolphin
 ```
-<<<<<<< HEAD
 Refer to the manual installation guide for specific application configurations.
 
 =======
 > [!CAUTION]
 > ⚠️ WARNING: Any personal modifications will be overwritten! Create a backup!
->>>>>>> 5c8361b6c2af18b79dd5bb0b49467bcd527ec783
 
 
 ## 🎨 Themes & Colour Schemes
