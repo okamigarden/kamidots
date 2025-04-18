@@ -27,7 +27,7 @@ Manual Installation Command
 ./backup.sh
 rsync -av --progress ~/kamidots/.config/ ~/.config/
 rsync -av --progress ~/kamidots/.local/ ~/.local/
-rsync -av --progress ~/kamidots/usr/ /usr/
+sudo rsync -av --progress ~/kamidots/usr/ /usr/
 ```
 
 2. Wallpaper Setup
@@ -43,6 +43,7 @@ swww img ~/Pictures/Wallpapers/wallhaven-48kgk4.png
 mkdir -p ~/.local/share/dolphin
 mv ~/kamidots/.local/share/dolphin ~/.local/share/dolphin
 ```
+
 4. Additional Information
 ```
 less READ_AFTER_INSTALLATION.txt
