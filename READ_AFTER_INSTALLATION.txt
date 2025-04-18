@@ -21,9 +21,15 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Thanks for installing my configuration :)
 
-To enable a dual monitor setup read line 430 in the hyprland config (~/.config/hypr/hyprland.conf)
+1. Setup monitor(s) in hyprland.conf (~/.config/hypr/hyprland.conf)
+2. To enable a dual monitor setup read line 430 in the hyprland config (~/.config/hypr/hyprland.conf)
+3. Setup waybar to work with dual monitor setup:
+   cd ~/.config/waybar
+   nano config.jsonc
+   Find "output:"
+   Example:
+	"output": [ "eDP-1", "HDMI-A-1" ],
 
-Setup monitor(s) in hyprland.conf (~/.config/hypr/hyprland.conf)
 
 Make sure to star and update the repository:
 cd ~/kamidots
