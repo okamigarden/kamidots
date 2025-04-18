@@ -22,15 +22,28 @@ sudo ./install.sh
 ## 🔧 Manual Installation
 
 If you prefer a manual setup, you can copy the required configuration files into your .config directory.
-
-Manual Installation Command
+> [!CAUTION]
+> ⚠️ WARNING: Any personal modifications will be overwritten! Create a backup!Manual Installation Command
+1. Copy configuration files over to system. ENSURE YOU BACKUP YOUR DATA!
 ```
-WIP - Coming soon :)
+rsync -av --progress ~/kamidots/.config/ ~/.config/
+rsync -av --progress ~/kamidots/.local/ ~/.local/
+rsync -av --progress ~/kamidots/usr/ /usr/
+```
+
+2. Wallpaper Setup
+```
+mkdir -p ~/Pictures/Wallpapers
+rsync -av ~/kamidots/Wallpapers/ ~/Pictures/Wallpapers
+swww-daemon
+swww img ~/Pictures/Wallpapers/wallhaven-48kgk4.png
+```
+3. Dolphin Setup
+mkdir -p ~/.local/share/dolphin
+mv ~/kamidots/.local/share/dolphin ~/.local/share/dolphin
 ```
 Refer to the manual installation guide for specific application configurations.
 
-> [!CAUTION]
-> ⚠️ WARNING: Any personal modifications will be overwritten! Create a backup!
 
 ## 🎨 Themes & Colour Schemes
 
@@ -46,8 +59,9 @@ Check out the themes documentation for more options.
 
 To keep your configurations updated with the latest changes, run:
 ```
-cd ~/kamidots
-git pull origin master
+1. cd ~/kamidots
+2. git pull origin master
+3. Complete manual installation.
 ```
 ## 💡 Contributing
 
