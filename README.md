@@ -2,6 +2,8 @@
 
 These dotfiles represent my personal work, entertainment, and daily operating setup.
 
+**Switch over to the Testing branch to experience the most up to date version of kamidots.**
+
 ## 📌 Overview
 
 This project is an ongoing development of my .config files, designed to be optimised for performance, gaming, usability, and aesthetics.
